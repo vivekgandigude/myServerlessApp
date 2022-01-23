@@ -18,13 +18,16 @@
   },
   "homepage": "https://github.com/maciejtreder/myServerlessApp#readme",
   "devDependencies": {
-    "nodemon": "^1.11.0",
-    "serverless": "^1.16.1"
+    "nodemon": "^1.19.4",
+    "serverless": "^1.83.3"
   },
   "dependencies": {
-    "aws-serverless-express": "^3.0.2",
+    "aws-serverless-express": "^3.4.0",
+    "axios": "^0.25.0",
     "body-parser": "^1.17.2",
+    "cors": "^2.8.5",
     "ejs": "^2.5.6",
-    "express": "^4.15.3"
+    "express": "^4.17.2",
+    "qs": "^6.10.3"
   }
 }
