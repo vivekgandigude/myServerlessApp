@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
-//const router = require("./route");
-//const cors = require("cors");
+const router = require("./route");
+const cors = require("cors");
 //import splistController from "../controller/splistcontroller";
 const splistController = require("../controller/splistcontroller")
 
@@ -35,9 +35,9 @@ const bodyParser = require("body-parser");
 app.engine("html", require("ejs").renderFile);
 app.set("view engine", "html");
 app.set("views", "views");
-//app.use(cors());
+app.use(cors());
 app.use(express.json({ limit: "100mb" }));
-//app.use(router);
+app.use(router);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use((err, req, res, next) => {
   handleError(err, res);
